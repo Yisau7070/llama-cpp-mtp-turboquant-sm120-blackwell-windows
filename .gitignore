@@ -1,0 +1,14 @@
+# Binary release artifacts — uploaded as GitHub Release assets, not tracked in git
+*.zip
+*.7z
+*.tar.gz
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp

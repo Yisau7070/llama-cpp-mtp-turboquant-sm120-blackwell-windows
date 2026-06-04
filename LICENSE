@@ -1,0 +1,70 @@
+MIT License
+
+This build is a binary release composed of source code from multiple upstream
+projects, all of which are licensed under the MIT License. The terms below
+apply to this binary distribution and to the build scripts. The underlying
+source code retains its original copyrights and licenses.
+
+================================================================================
+
+llama.cpp (upstream and forks)
+
+Copyright (c) 2023-2026 The ggml authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
+Component attribution
+
+This binary distribution combines:
+
+1. llama.cpp upstream
+   https://github.com/ggml-org/llama.cpp
+   MIT License — see above
+
+2. am17an/llama.cpp mtp-clean branch
+   PR #22673 — Multi-Token Prediction integration
+   MIT License (inherits from llama.cpp upstream)
+
+3. TheTom/llama-cpp-turboquant
+   https://github.com/TheTom/llama-cpp-turboquant
+   Original TurboQuant kernel port for llama.cpp
+   MIT License (inherits from llama.cpp upstream)
+
+4. NJannasch/llama.cpp mtp-turboquant branch
+   https://github.com/NJannasch/llama.cpp/tree/mtp-turboquant
+   Cherry-pick combining MTP and TurboQuant — the direct source of this build
+   MIT License (inherits from llama.cpp upstream)
+
+5. TurboQuant algorithm (concept)
+   Zandieh et al., ICLR 2026
+   "TurboQuant: Walsh-Hadamard-rotated polar codebook quantization for KV cache"
+   Algorithm reference — not source code. The kernel implementations are
+   community work by TheTom, AmesianX, and others.
+
+6. NVIDIA CUDA Runtime Libraries (cudart, cublas, cublasLt)
+   Bundled DLLs (cudart64_12.dll, cublas64_12.dll, cublasLt64_12.dll)
+   These are NVIDIA's redistributable runtime libraries from CUDA Toolkit 12.8.
+   Redistribution permitted under the CUDA Toolkit EULA's redistribution clauses.
+   Full CUDA EULA: https://docs.nvidia.com/cuda/eula/
+
+================================================================================
+
+This binary build is provided AS-IS, WITHOUT WARRANTY OR SUPPORT.
