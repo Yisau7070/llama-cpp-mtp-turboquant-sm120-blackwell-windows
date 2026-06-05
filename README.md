@@ -53,6 +53,22 @@ Older NVIDIA cards (Ampere, Hopper, Ada) — not targeted by this build. Use ups
 
 This runs Qwen3.6-27B with 256K context, TurboQuant KV (~5× compression vs f16), and MTP speculative decoding, all in ~15 GB of VRAM.
 
+## ✅ Verified — works out of the box (2026-06-05)
+
+The release zip was downloaded from **this very GitHub release page**, extracted into a clean folder, and benchmarked end-to-end on RTX 5060 Ti 16GB with `Qwen3.6-27B-UD-IQ3_XXS.gguf` (Unsloth MTP variant), 256K context, turbo3 KV, MTP with `n_max=2`:
+
+```
+[ Prompt: 77.9 t/s | Generation: 45.1 t/s ]
+build: b9150-d1cfe5766
+```
+
+- SHA256 of the downloaded asset matches the original local build
+- All binaries and CUDA 12.8 runtime DLLs ship inside the zip — **no separate CUDA Toolkit install needed**
+- Decode speed within 3% of the local source build (~46.7 t/s) — variance is normal run-to-run noise
+- 256K context loads correctly, no asserts, no OOM
+
+**No external dependencies.** Download → Extract → Run.
+
 ## Performance benchmarks (RTX 5060 Ti 16GB)
 
 Model: `Qwen3.6-27B-UD-IQ3_XXS.gguf` (Unsloth dynamic 3.0625 bpw, MTP variant).
